@@ -108,67 +108,68 @@ function Signin() {
               />
             </>
           )) ||
-            //or come back sign in form
-            //Change between sign in and sign up form
-            (isSignIn && (
-              <>
-                {formFields.signInForm.map((field) => {
-                  return (
-                    <Input
-                      sx={styleForInput}
-                      showErrorMessage
-                      value={state ? state[field.name] : undefined}
-                      wasSubmitted={wasSubmitted}
-                      id={field.name}
-                      handleShowPass={
-                        field.name === "password" ? handleShowPass : null
-                      }
-                      key={field.id}
-                      icon={
-                        field.name === "password"
-                          ? field.icon[showPass ? "show" : "hide"]
-                          : null
-                      }
-                      name={field.name}
-                      type={
-                        field.name === "password"
-                          ? field.type[showPass ? "show" : "hide"]
-                          : field.type
-                      }
-                      title={field.title}
-                    />
-                  );
-                })}
-              </>
-            )) || (
-              <>
-                {formFields.signUpForm.map((field) => {
-                  return (
-                    <Input
-                      sx={styleForInput}
-                      wasSubmitted={wasSubmitted}
-                      id={field.name}
-                      handleShowPass={
-                        field.name === "password" ? handleShowPass : null
-                      }
-                      key={field.id}
-                      icon={
-                        field.name === "password"
-                          ? field.icon[showPass ? "show" : "hide"]
-                          : null
-                      }
-                      name={field.name}
-                      type={
-                        field.name === "password"
-                          ? field.type[showPass ? "show" : "hide"]
-                          : field.type
-                      }
-                      placeholder={field.title}
-                    />
-                  );
-                })}
-              </>
-            )
+          //or come back sign in form
+          //Change between sign in and sign up form
+          (isSignIn && (
+            <>
+              {formFields.signInForm.map((field) => {
+                return (
+                  <Input
+                    sx={styleForInput}
+                    showErrorMessage
+                    value={state ? state[field.name] : undefined}
+                    wasSubmitted={wasSubmitted}
+                    id={field.name}
+                    handleShowPass={
+                      field.name === "password" ? handleShowPass : null
+                    }
+                    key={field.id}
+                    icon={
+                      field.name === "password"
+                        ? field.icon[showPass ? "show" : "hide"]
+                        : null
+                    }
+                    name={field.name}
+                    type={
+                      field.name === "password"
+                        ? field.type[showPass ? "show" : "hide"]
+                        : field.type
+                    }
+                    title={field.title}
+                  />
+                );
+              })}
+            </>
+          )) || (
+            <>
+              {formFields.signUpForm.map((field) => {
+                return (
+                  <Input
+                    sx={styleForInput}
+                    showErrorMessage
+                    wasSubmitted={wasSubmitted}
+                    id={field.name}
+                    handleShowPass={
+                      field.name === "password" ? handleShowPass : null
+                    }
+                    key={field.id}
+                    icon={
+                      field.name === "password"
+                        ? field.icon[showPass ? "show" : "hide"]
+                        : null
+                    }
+                    name={field.name}
+                    type={
+                      field.name === "password"
+                        ? field.type[showPass ? "show" : "hide"]
+                        : field.type
+                    }
+                    placeholder={field.title}
+                  />
+                );
+              })}
+            </>
+          )
         }
         <div className={styles.button}>
           <Button handleClick={handleCancel} type="button">
