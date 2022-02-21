@@ -1,0 +1,51 @@
+.createCoupon{
+    width:400px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 20px ;
+}
+.heading{
+    margin-bottom: 24px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+}
+.buttons{
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dataPicker{
+    position: relative;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: 100%;
+    min-height: 40px;
+    padding: 6px 22px 6px 6px;
+    background-color: white;
+    color: var(--text-color);
+    font-size: 16px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset , 0 3px 6px rgba(0, 0, 0, 0.2) ;
+    margin-bottom: 16px;
+
+}
+
+.dataPicker:focus{
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+.dateTitle{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}

@@ -1,0 +1,19 @@
+.createCategoryForm{
+    width:400px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 20px ;
+}
+.heading{
+    margin-bottom: 24px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+}
+.buttons{
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

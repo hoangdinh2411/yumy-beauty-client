@@ -1,0 +1,50 @@
+.wrapper__heading {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 12px;
+}
+
+.pageTitle {
+  font-size: 24px;
+}
+
+
+.content{
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.content.table{
+  max-height: 400px;
+  min-height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.content.profile{
+  padding: 40px 18px 12px 18px;
+  border-radius: 0;
+  flex:1;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+
+
+
+.searchBar{
+  width: 100%;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+
+/* base */
+.height100 {
+  height: 100%;
+}
+
+.mgBottom {
+  margin-bottom: 12px;
+}

@@ -1,0 +1,33 @@
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 18px;
+  min-width: 120px;
+  min-height: 40px;
+  color: black;
+  /*  Button khi chua click, nhin nhu dang noi len */
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3) inset, 0 3px 12px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+svg {
+  font-size: 18px;
+}
+.button:hover {
+  /*  button khi da click, nhu chim xuong */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3) inset;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}

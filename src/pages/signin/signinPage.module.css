@@ -1,0 +1,34 @@
+.wrapper{
+    display: flex;
+    height: 100%;
+}
+.form{
+    border-radius: 6px;
+    width: 350px;
+    margin: auto;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px var(--text-color);
+}
+.heading{
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.button{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+.changeForm,.resetPassword{
+    text-decoration: underline;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+    margin: 6px 0;
+}
+
+.changeForm:hover,.resetPassword:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+

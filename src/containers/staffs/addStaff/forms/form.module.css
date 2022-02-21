@@ -1,0 +1,60 @@
+.addForm{
+    width:700px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    position: relative;
+    max-height:550px ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.heading{
+    margin-bottom: 24px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+}
+.addFile{
+    padding: 30px 0 30px 0;
+    position: relative;
+    flex: 1;
+    display: flex;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.inputs{
+    width: 60%;
+    padding: 0 6px 0 6px;
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+    height: 100%;
+    margin-left: 6px;
+}
+
+.filePreview{
+    flex:1;
+    width: 250px;
+    height: 50%;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.view{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width:100%;
+}
+
+.note{
+    color: red;
+
+}
+
+.buttons{
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

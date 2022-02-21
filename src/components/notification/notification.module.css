@@ -1,0 +1,31 @@
+.wrapper{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.wrapper:hover{
+    opacity: 0.8;
+}
+svg{
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+.number{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    top:10px;
+    left:10px;
+}
