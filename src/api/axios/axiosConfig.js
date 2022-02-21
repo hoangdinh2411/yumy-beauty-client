@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: process.env.REACT_APP_BASE_URL ||'http://localhost:5000' ,
   timeout:10000,
   headers: {
     "content-type": "application/json",
