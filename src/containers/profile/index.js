@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux";
 
 const profileInputStyle = {
   width: 600,
-  marginBottom: 50,
+  marginBottom: 10,
 };
 function Profile() {
   const location = useLocation();
